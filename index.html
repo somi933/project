@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌐 Country Explorer</h1>
+    <p>Click a country to learn more</p>
+  </header>
+
+  <main>
+    <div class="map-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Flag_map_of_the_World.svg" alt="World Map" usemap="#worldmap" />
+      <map name="worldmap">
+        <area shape="rect" coords="400,200,450,250" alt="India" onclick="showCountry('India')" />
+        <area shape="rect" coords="250,150,300,200" alt="USA" onclick="showCountry('USA')" />
+        <area shape="rect" coords="500,100,550,150" alt="China" onclick="showCountry('China')" />
+        <!-- Add more countries as needed -->
+      </map>
+    </div>
+
+    <section id="country-info" class="info-card">
+      <h2 id="country-name">Select a country</h2>
+      <p id="country-description">Country details will appear here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Country Explorer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
